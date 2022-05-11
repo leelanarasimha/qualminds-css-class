@@ -1,0 +1,58 @@
+* {
+  color: darkgray;
+}
+body {
+  margin: 40px 0px;
+}
+
+h1 {
+  color: red;
+}
+
+.green-color {
+  color: green;
+}
+
+#my-div-id {
+  color: yellow;
+}
+
+[data-type='primary' i],
+[href*='google'] {
+  color: red;
+}
+
+[href$='org'] {
+  color: blue;
+}
+
+[href^='https'] {
+  color: darkgoldenrod;
+}
+
+a:hover {
+  color: brown;
+}
+
+.pseudo-element::before {
+  content: 'prefix - ';
+  color: red;
+}
+
+.pseudo-element::after {
+  content: ' - suffix';
+  color: green;
+}
+
+li::marker {
+  color: red;
+}
+
+::selection {
+  color: red;
+  background-color: black;
+}
+
+a.my-class {
+  color: red;
+}

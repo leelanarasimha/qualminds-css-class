@@ -1,0 +1,32 @@
+p {
+  color: red;
+  margin: 20px;
+}
+
+#my-div {
+  color: green;
+  margin: 0px;
+  width: 100px;
+  height: 100px;
+}
+
+#my-div p {
+  all: initial;
+}
+
+div.display-div {
+  display: initial;
+}
+
+h1 {
+  font-weight: initial;
+  font-size: initial;
+}
+
+em {
+  font-style: initial;
+}
+
+p em {
+  font-style: revert;
+}

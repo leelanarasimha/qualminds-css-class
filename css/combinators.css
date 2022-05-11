@@ -1,0 +1,15 @@
+.my-element p {
+  color: red;
+}
+
+.my-element1 > p {
+  color: red;
+}
+
+.my-element2 ~ * {
+  color: red;
+}
+
+button {
+  color: purple !important;
+}

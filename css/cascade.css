@@ -1,0 +1,22 @@
+a.my-class.another-class[href]:hover {
+  color: gray;
+}
+a.my-class.another-class[href] {
+  color: blue;
+}
+
+a.my-class.another-class {
+  color: brown;
+}
+
+a.my-class {
+  color: yellow;
+}
+
+a {
+  color: red;
+}
+
+a {
+  color: green;
+}
