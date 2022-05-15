@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header.header {
+  text-align: center;
+  background-color: brown;
+  color: white;
+  padding: 10px;
+}
+
+.header h1.title {
+  margin: 0px;
+}
+
+/* Navigation */
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  background-color: bisque;
+  color: black;
+  padding: 5px 0px;
+  border-bottom: 1px solid black;
+}
+
+/*end navigation */
+
+/* >=800px */
+@media (min-width: 800px) {
+  header.header {
+    height: 80px;
+    padding: 20px 0px;
+  }
+  .header h1.title {
+    float: left;
+    margin-left: 1em;
+  }
+
+  .header .sales {
+    float: right;
+    padding-top: 15px;
+    margin-right: 1em;
+  }
+
+  .nav ul li {
+    float: left;
+    width: 33.33%;
+  }
+
+  .nav ul li a {
+    border-bottom: none;
+    padding: 10px 0px;
+    border-right: 1px solid black;
+  }
+
+  .nav ul li:last-child a {
+    border-right: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.header {
+    background-color: darkgreen;
+  }
+}

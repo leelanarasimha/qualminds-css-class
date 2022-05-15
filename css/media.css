@@ -1,0 +1,22 @@
+/* > 400px color should be green */
+@media (min-width: 401px) {
+  div.box {
+    font-size: 40px;
+    color: green;
+  }
+}
+
+/* <= 400px and less  */
+@media (max-width: 50) {
+  div.box {
+    font-size: 40px;
+    color: darkgoldenrod;
+  }
+}
+
+@media (min-height: 500px) and (max-width: 600px) {
+  div.box {
+    font-size: 40px;
+    color: red;
+  }
+}
