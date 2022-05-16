@@ -6,6 +6,8 @@
 
 body {
   margin: 0;
+  font-size: 20px;
+  font-family: 'Macondo', sans-serif;
 }
 
 header.header {
@@ -41,7 +43,56 @@ nav ul li a {
 
 /*end navigation */
 
-/* >=800px */
+/* Products */
+
+.products_section {
+  margin: 10px;
+}
+
+.products_section .product {
+  margin: 10px 0px;
+}
+
+.products_section .product_box {
+  border: 1px solid black;
+}
+
+.products_section .product_title {
+  font-size: 2em;
+}
+
+.product p {
+  font-size: 1em;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product .product_details {
+  margin: 0px 10px;
+}
+
+p.product_price {
+  font-size: 1.5em;
+}
+
+/* small devices */ /* > 500px */
+@media (min-width: 500px) {
+  .products_section .product {
+    width: 50%;
+    float: left;
+  }
+
+  .products_section .product_box {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+/* end Products */
+
+/* >=800px */ /* Ipad Section */ /* > 800px */
 @media (min-width: 800px) {
   header.header {
     height: 80px;
@@ -74,8 +125,28 @@ nav ul li a {
   }
 }
 
+/* large Devices */ /* > 1200px */
 @media (min-width: 1200px) {
   header.header {
     background-color: darkgreen;
+  }
+
+  .products_section {
+    width: 80%;
+    margin: auto;
+  }
+
+  .products_section .product {
+    width: 33.33%;
+  }
+}
+
+/* > 1500px */ /* xtra large devices */
+@media (min-width: 1500px) {
+  body {
+    font-size: 16px;
+  }
+  .products_section .product {
+    width: 25%;
   }
 }
